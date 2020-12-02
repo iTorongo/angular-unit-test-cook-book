@@ -3,9 +3,8 @@
 The repo will try to cover different types of angular unit test examples for real world application
 
 ## Install
-For runnint it locally,
 
-clone this repo and Run `npm install`
+Clone this repo and Run `npm install`
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
