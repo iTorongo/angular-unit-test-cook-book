@@ -1,0 +1,17 @@
+
+<div class="alert alert-danger notice" *ngIf="visibility">
+    This site is under maintainance
+</div>
+<div class="card bg-light mt-3 mb-4">
+    <div class="card-header">Dom Testing</div>
+    <div class="card-body text-dark">
+        <p class="card-text">By clicking the below button will display/hide the alert notice!</p>
+        <button class="btn btn-primary" (click)="toggleAlert()">Toggle Alert</button>
+    </div>
+</div>
+
+
+<div class="alert type" [ngClass]="isSuccess ? 'alert-success' : 'alert-dark'">
+    I will change my colour if you click change 
+</div>
+<button class="btn btn-dark btn-sm" (click)="changeAlertType()">Change</button>

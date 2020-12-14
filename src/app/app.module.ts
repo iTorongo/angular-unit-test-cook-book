@@ -14,6 +14,7 @@ import { CounterUtComponent } from './components/counter-ut/counter-ut.component
 import { EventEmitterComponent } from './components/event-emitter/event-emitter.component';
 import { ChangeBackgroundComponent } from './components/change-background/change-background.component';
 import { ServiceUtComponent } from './components/service-ut/service-ut.component';
+import { DomTestComponent } from './components/dom-test/dom-test.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ServiceUtComponent } from './components/service-ut/service-ut.component
     EventEmitterComponent,
     ChangeBackgroundComponent,
     ServiceUtComponent,
+    DomTestComponent,
   ],
   imports: [
     BrowserModule,
