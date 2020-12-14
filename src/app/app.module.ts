@@ -12,6 +12,7 @@ import { FormsComponent } from './forms/forms.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { EventEmitterComponent } from './components/event-emitter/event-emitter.component';
+import { ChangeBackgroundComponent } from './components/change-background/change-background.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { EventEmitterComponent } from './components/event-emitter/event-emitter.
     SidebarComponent,
     CounterComponent,
     EventEmitterComponent,
+    ChangeBackgroundComponent,
   ],
   imports: [
     BrowserModule,
