@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { EventEmitterComponent } from './components/event-emitter/event-emitter.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CounterComponent } from './components/counter/counter.component';
     FormsComponent,
     SidebarComponent,
     CounterComponent,
+    EventEmitterComponent,
   ],
   imports: [
     BrowserModule,
