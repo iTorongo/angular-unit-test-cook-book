@@ -10,7 +10,7 @@ import { UtilsModule } from './utils/utils.module';
 import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
-import { CounterComponent } from './components/counter/counter.component';
+import { CounterUtComponent } from './components/counter-ut/counter-ut.component';
 import { EventEmitterComponent } from './components/event-emitter/event-emitter.component';
 import { ChangeBackgroundComponent } from './components/change-background/change-background.component';
 import { ServiceUtComponent } from './components/service-ut/service-ut.component';
@@ -20,7 +20,7 @@ import { ServiceUtComponent } from './components/service-ut/service-ut.component
     AppComponent,
     FormsComponent,
     SidebarComponent,
-    CounterComponent,
+    CounterUtComponent,
     EventEmitterComponent,
     ChangeBackgroundComponent,
     ServiceUtComponent,

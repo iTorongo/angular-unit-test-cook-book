@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-counter',
   template: '',
 })
-export class CounterComponent implements OnInit {
+export class CounterUtComponent implements OnInit {
 
   counter = 0;
 
