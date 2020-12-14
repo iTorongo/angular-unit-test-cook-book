@@ -10,12 +10,14 @@ import { UtilsModule } from './utils/utils.module';
 import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormsComponent,
     SidebarComponent,
+    CounterComponent,
   ],
   imports: [
     BrowserModule,
