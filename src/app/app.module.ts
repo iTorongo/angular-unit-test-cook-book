@@ -13,7 +13,7 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { EventEmitterComponent } from './components/event-emitter/event-emitter.component';
 import { ChangeBackgroundComponent } from './components/change-background/change-background.component';
-import { ServiceUsageComponent } from './components/service-usage/service-usage.component';
+import { ServiceUtComponent } from './components/service-ut/service-ut.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { ServiceUsageComponent } from './components/service-usage/service-usage.
     CounterComponent,
     EventEmitterComponent,
     ChangeBackgroundComponent,
-    ServiceUsageComponent,
+    ServiceUtComponent,
   ],
   imports: [
     BrowserModule,
