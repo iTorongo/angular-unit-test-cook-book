@@ -1,3 +1,4 @@
+import { DebugElement } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
@@ -49,5 +50,12 @@ describe('DomTestComponent', () => {
     const de = fixture.debugElement.query(By.css('.type'));
 
     expect(de.classes['alert-success']).toBeTruthy();
+  });
+
+  it('should find a <h4> with text Robert Downey Jr.', () => {
+    const de: DebugElement = fixture.debugElement.query(By.css('h4'));
+    const h4: HTMLElement = de.nativeElement;
+
+    expect(h4.textContent).toEqual('Robert Downey Jr.');
   });
 });

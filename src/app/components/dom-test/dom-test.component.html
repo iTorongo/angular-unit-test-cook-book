@@ -1,17 +1,23 @@
-
-<div class="alert alert-danger notice" *ngIf="visibility">
-    This site is under maintainance
-</div>
-<div class="card bg-light mt-3 mb-4">
-    <div class="card-header">Dom Testing</div>
-    <div class="card-body text-dark">
-        <p class="card-text">By clicking the below button will display/hide the alert notice!</p>
-        <button class="btn btn-primary" (click)="toggleAlert()">Toggle Alert</button>
+<h3>Dom Testing</h3>
+<div class="row">
+  <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <img class="avatar rounded-circle"
+          src="../../../assets/images/robert.jpg" alt="jr">
+        <h4 class="card-title">Robert Downey Jr.</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Famous Actor</h6>
+        <p class="card-text">Robert John Downey Jr.'career has included critical and popular success in his youth </p>
+        <button class="btn btn-dark" (click)="toggleAlert()">{{ visibility ? 'Unfollow' : 'Follow'}}</button>
+      </div>
     </div>
+  </div>
 </div>
 
-
-<div class="alert type" [ngClass]="isSuccess ? 'alert-success' : 'alert-dark'">
-    I will change my colour if you click change 
+<div class="alert alert-success notice mt-2" *ngIf="visibility">
+  You are now following Robert Downey Jr.
 </div>
-<button class="btn btn-dark btn-sm" (click)="changeAlertType()">Change</button>
+<div class="alert type mt-3" [ngClass]="isSuccess ? 'alert-success' : 'alert-dark'">
+  I will change my colour if you click change
+</div>
+<button class="btn btn-dark btn-sm btn-change" (click)="changeAlertType()">Change</button>
