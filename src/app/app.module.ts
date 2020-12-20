@@ -12,7 +12,7 @@ import { FormsComponent } from './forms/forms.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { CounterUtComponent } from './components/counter-ut/counter-ut.component';
 import { EventEmitterComponent } from './components/event-emitter/event-emitter.component';
-import { ChangeBackgroundComponent } from './components/change-background/change-background.component';
+import { PrivacyComponent } from './components/privacy/privacy.component';
 import { ServiceUtComponent } from './components/service-ut/service-ut.component';
 import { DomTestComponent } from './components/dom-test/dom-test.component';
 
@@ -23,7 +23,7 @@ import { DomTestComponent } from './components/dom-test/dom-test.component';
     SidebarComponent,
     CounterUtComponent,
     EventEmitterComponent,
-    ChangeBackgroundComponent,
+    PrivacyComponent,
     ServiceUtComponent,
     DomTestComponent,
   ],
