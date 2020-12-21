@@ -18,7 +18,7 @@ const routes: Routes = [
     component: DomTestComponent
   },
   {
-    path: 'roures',
+    path: 'routes',
     loadChildren: () =>
       import('./routes/routes.module').then((m) => m.RoutesModule),
   },
