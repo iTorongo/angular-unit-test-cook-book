@@ -15,6 +15,8 @@ import { EventEmitterComponent } from './components/event-emitter/event-emitter.
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { ServiceUtComponent } from './components/service-ut/service-ut.component';
 import { DomTestComponent } from './components/dom-test/dom-test.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { DomTestComponent } from './components/dom-test/dom-test.component';
     PrivacyComponent,
     ServiceUtComponent,
     DomTestComponent,
+    UserListComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { DomTestComponent } from './components/dom-test/dom-test.component';
     SharedModule,
     UtilsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

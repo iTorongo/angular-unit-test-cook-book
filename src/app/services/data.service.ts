@@ -17,11 +17,15 @@ export class DataService {
     return of([
       {
         id: 1,
-        name: 'john'
+        name: 'John Doe'
       },
       {
         id: 2,
-        name: 'Doe'
+        name: 'Jane Doe'
+      },
+      {
+        id: 3,
+        name: 'Frank Mey'
       }
     ]);
   }
