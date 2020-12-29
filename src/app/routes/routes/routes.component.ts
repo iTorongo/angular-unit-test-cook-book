@@ -16,6 +16,7 @@ export class RoutesComponent implements OnInit {
   }
 
   navigateTo(): void {
+    // Some tasks or conditional statements
     this.router.navigate(['routes/contact']);
   }
 }

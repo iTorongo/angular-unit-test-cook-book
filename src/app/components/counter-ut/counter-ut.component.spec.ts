@@ -10,8 +10,6 @@ describe('CounterUtComponent', () => {
 
 
   it('should increment counter value when increment() is called', () => {
-    // Arrange
-
     // Act
     component.increment();
 
@@ -20,13 +18,21 @@ describe('CounterUtComponent', () => {
   });
 
   it('should decrement counter value when decrement() is called', () => {
-    // Arrange
-
     // Act
     component.decrement();
 
     // Assert
     expect(component.counter).toBe(-1);
+  });
+
+
+  // Write unit test for RocketCreate
+
+
+  it('should create a rocket with you own name', () => {
+    let result = component.createOwnRocket('Torongo');
+
+    expect(result).toContain('Torongo');
   });
 
 });

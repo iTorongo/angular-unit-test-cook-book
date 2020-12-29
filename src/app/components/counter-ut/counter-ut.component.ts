@@ -21,4 +21,13 @@ export class CounterUtComponent implements OnInit {
     this.counter--;
   }
 
+  createOwnRocket(name): string {
+    // A rocket is creating
+    // rocket science code ...
+    // ..
+    // ..
+    // End
+    return `${name}, your rocket has been created`;
+  }
+
 }
