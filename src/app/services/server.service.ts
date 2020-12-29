@@ -14,4 +14,8 @@ export class ServerService {
   getUserList(): Observable<any> {
     return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
+
+  createUser(data): Observable<any> {
+    return this.http.post('https://jsonplaceholder.typicode.com/users', data);
+  }
 }
