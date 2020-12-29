@@ -15,9 +15,7 @@ describe('ServerService', () => {
         HttpClientTestingModule
       ]
     });
-    // service = TestBed.inject(ServerService);
 
-    // TODO: spy on other methods too
     httpClientSpy = jasmine.createSpyObj('HttpClient', ['get', 'post']);
     service = new ServerService(httpClientSpy as any);
   });

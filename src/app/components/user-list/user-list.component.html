@@ -1,12 +1,20 @@
 <h3>Users</h3>
-<ul class="list-group list-group-flush">
-  <li class="list-group-item d-flex justify-space-evenlys align-items-center" *ngFor="let user of users">
-    <div class="my-2">
-      <img class="img-round" style="width: 80px;" src="../../../assets/images/avatar.png" class="list-item-image">
-    </div>
-    <div class="list-item-content ml-4">
-      <h4>{{ user.name }}</h4>
-      <p>{{ user.email }}</p>
-    </div>
-  </li>
-</ul>
+<div class="row">
+  <div class="col-8 col-sm-8">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex justify-space-evenlys align-items-center" style="cursor: pointer;"
+        *ngFor="let user of users.slice(0, 4);" (click)="selectUser(user.id)">
+        <div class="my-2">
+          <img class="img-round" style="width: 80px;" src="../../../assets/images/avatar.png" class="list-item-image">
+        </div>
+        <div class="list-item-content ml-4">
+          <h4>{{ user.name }}</h4>
+          <p>{{ user.email }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4">
+    <app-user-details [user]="userDetails" (userFollowed)="followSelectedUser($event)"></app-user-details>
+  </div>
+</div>

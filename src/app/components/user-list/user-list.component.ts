@@ -10,6 +10,8 @@ export class UserListComponent implements OnInit {
 
   users = [];
 
+  userDetails: any;
+
   constructor(
     private service: ServerService
   ) { }
@@ -20,4 +22,13 @@ export class UserListComponent implements OnInit {
     });
   }
 
+  selectUser(id): void {
+    this.service.getUser(id).subscribe(res => {
+      this.userDetails = res;
+    });
+  }
+
+  followSelectedUser(event): void {
+    alert(`${event.name} has been followed!`)
+  }
 }

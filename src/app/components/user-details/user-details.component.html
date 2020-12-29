@@ -1,0 +1,9 @@
+<div class="card" *ngIf="user">
+    <div class="card-body text-center">
+        <img class="avatar rounded-circle" style="width: 150px;" src="../../../assets/images/avatar.png" alt="jr">
+        <h4 class="card-title">{{ user.name }}</h4>
+        <h6 class="card-subtitle mb-2 text-muted">{{ user.email }}</h6>
+        <p class="card-text">{{ user.company.catchPhrase }}</p>
+        <button class="btn btn-dark btn-follow" (click)="follow(user)">Follow</button>
+    </div>
+</div>
